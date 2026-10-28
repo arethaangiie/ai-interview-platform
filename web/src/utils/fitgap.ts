@@ -18,5 +18,5 @@ export function summarizeCoverage(
 export function requiredLevelOf(
   c: Pick<SkillComparison, "required_level" | "expected_level">
 ): number | undefined {
-  return c.expected_level ?? c.required_level;
+  return c.required_level;
 }

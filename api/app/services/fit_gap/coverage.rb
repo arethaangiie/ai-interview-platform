@@ -12,7 +12,7 @@ module FitGap
       not_assessed = list.count { |c| result_of(c) == 'not_assessed' }
 
       {
-        assessed:     total - not_assessed,
+        assessed:     total,
         total:        total,
         not_assessed: not_assessed,
         complete:     not_assessed.zero?
